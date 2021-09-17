@@ -1,0 +1,117 @@
+<!--CALCULADORA EXERCICI 1 NIVELL 2-->
+
+<html>
+    <head>
+        <title> OPERACIONS </title>
+    </head>
+<body>
+    <p id = " Resultat " ></p>
+
+<script>
+
+var num1 = prompt( "Si us plau, indica un numero ", " " );
+
+var num2 = prompt ( "Siusplau, indica un altre numero"," " );
+
+var operacio = prompt ( "Quina operació desitja realitzar?(+, -, /, * ) ");
+
+
+
+function suma(num1, num2) {
+
+        var operacio = "suma";
+
+        suma = Number (num1) + Number (num2);
+
+
+        document.getElementById(" Resultat ").innerHTML = "El resultat de la " + operacio + " és " + suma ;
+
+        if (Number(num1) + (num2)) {
+            return true;
+        }
+
+        else {
+            return false;
+        }
+}
+
+function resta(num1, num2) {
+
+    var operacio = "resta";
+
+    resta = Number (num1) - Number (num2);
+
+    document.getElementById( " Resultat ").innerHTML = "El resultat de la " + operacio + " és " + resta ;
+
+    if (Number(num1) + (num2)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+
+}
+
+function multiplicacio( num1, num2) {
+
+    var operacio = "multiplicació";
+
+    multiplicacio = Number (num1) * Number (num2);
+
+    document.getElementById( " Resultat " ).innerHTML = "El resultat de la " + operacio + " és " + multiplicacio; 
+
+    if(Number(num1) * (num2)){
+
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function divisio( num1, num2) {
+    
+    var operacio = "divisio";
+
+    divisio = Number (num1) / Number (num2);
+
+    document.getElementById( " Resultat ").innerHTML = " El resultat de la " + operacio + " és " + divisio;
+
+    if (Number (num1) / (num2) ){
+
+        return true;
+    }
+    else {
+        return false;
+ 
+    }
+}
+
+
+    var resul = 0;
+
+    switch (operacio) {
+
+    case "+":
+        resul = suma (num1, num2);
+        break;
+
+    case "-":
+        resul  = resta(num1, num2);
+        break;
+        
+    case "*":
+        resul = multiplicacio(num1,num2);
+        break;
+
+    case "/":
+        resul = divisio(num1, num2);
+        break;
+    }
+
+    </script>
+    
+    
+</body>
+</html>
